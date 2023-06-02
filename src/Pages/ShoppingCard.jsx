@@ -14,8 +14,7 @@ const ShoppingCard = ({ totalItems, apiData, setSelectedItem }) => {
     <div className="text-center  sm:flex sm:justify-center	  	">
       <div className="border sm:w-2/4 p-2  ">
         <h1>shopping Card</h1>
-        {apiData
-          .filter((item) => totalItems.includes(item.id))
+        { totalItems.map((id) => apiData.find((obj) => obj.id === id))
           .map((item, i) => {
             console.log(item);
             return (
