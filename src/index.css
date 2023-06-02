@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.test {
+  padding: 20px;
+}
+
+.het {
+  color: red;
+}
